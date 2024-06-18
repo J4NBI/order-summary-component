@@ -1,0 +1,121 @@
+/* ###### RESET ###### */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,h1,h2,h3,h4,h5,h6,p {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* ###### Layout ###### */
+
+:root {
+  --primary-color: #382AE1;
+  --secondary-color: #766CF1;
+}
+
+
+/* ###### CARD ###### */
+
+body {
+  font-family: "Red Hat Display";
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  text-align: center;
+}
+body {
+  
+  background-color: rgba(230, 224, 244, 0.2);
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 60%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 85;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  
+}
+.card-content {
+  margin: 0 auto;
+  width: 80%;
+}
+.card-content h2 {
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
+.card {
+  width: 400px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.plan {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: hsl(240, 50%, 98%);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 10% 70% 20%;
+  place-items: start;
+  align-items: center;
+  
+
+}
+
+.plan img {
+  width:130%;
+  
+}
+ .anual p {
+  opacity: 0.4;
+ }
+
+.anual {
+  padding-left: 25px;
+}
+
+.anual a {
+  color: var(--secondary-color);
+}
+ a:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  
+  
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: white;
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+
+  -webkit-box-shadow: 1px 11px 15px 1px rgba(105,141,255,0.47); 
+  box-shadow: 1px 11px 15px 1px rgba(105,141,255,0.47)  
+}
+
+button:hover {
+  background-color: #766CF1;
+}
+
+.cancel {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  opacity: 0.5;
+  font-size: 0.9rem;
+}
